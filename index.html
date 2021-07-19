@@ -1,0 +1,249 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+
+    <!-- meta data of the webpage SEARCH ENGINE OPTIMIZATION  -->
+	<meta name="author"  content="Kyle Francis Edison Atienza and Mikaela Ashley Perlado">
+	<meta name="description" content="To design a website using HTML, CSS, Bootstrap, JavaScript and Jquery." >  
+	<meta name="keywords" content="E and B Farm Oyster Mushroom Products Local Organic Healthy Foods Snacks">
+	<meta charset="utf-8"> 
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>E and B Farm</title>
+    <link rel="shortcut icon" href="#">
+    
+    <!--FONTS-AWESOME-->
+    <script src="https://kit.fontawesome.com/8fd6ea3e93.js" crossorigin="anonymous"></script>
+    
+    <!--BOOTSTRAP-->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" 
+          integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" 
+          crossorigin="anonymous">
+
+    <!--CSS-->
+    <link rel="stylesheet" href="main.css">
+
+    <!--JS-->
+    <script src="https://code.jquery.com/jquery-3.5.1.min.js" 
+            integrity="sha256-9/aliU8dGd2tb6OSsuzixeV4y/faTqgFtohetphbbj0=" 
+            crossorigin="anonymous"></script>
+    <!--JAVASCRIPT-LINKS-LOCATED-AT-THE-END-OF-THE-BODY-->
+
+</head>
+<body>
+
+    <div class="circle2"></div>
+    <div class="circle1"></div>
+    
+    <!--NAV-->
+    <div class="nav-container d-flex justify-content-center">
+        <nav class="container navbar navbar-expand-md position-absolute" id="mainNav">
+            <!--Icon in title bar-->
+            <a class="navbar-brand d-flex align-items-center" href="#page-top">
+                <img src="imgs/logo.png">
+                <a href="#page-top">E & B FARM</a>
+            </a> 
+            <!--navbar toggler-->
+            <button class="navbar-toggler" type="button" data-toggle="collapse"data-target="#navbarNavAltMarkup"aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span> <!--!!!WALANG TOGGLE ICON!!!-->
+            </button>
+            <div class ="collapse navbar-collapse align-items-center" id="navbarResponsive" >
+                <ul class="navbar-nav ml-auto">
+                    <li class="nav-item">
+                        <a class="nav-link" href="#products">PRODUCTS</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#about-us">ABOUT US</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#footer">CONTACT US</a>
+                    </li>	
+                </ul>	
+            <div>
+        </nav>
+    </div>
+     
+    <!--POP-UP-HIDDEN-->
+    <section id="prod-pop-up">
+        <div class="container pop-up d-flex justify-content-center align-items-center position-fixed">
+            <div class="row prod-card">                
+                <div class="col-5 d-flex align-items-end justify-content-end product-img">
+                    <img id="pop-img" class="" src="" alt="">                    
+                </div>
+                <div class="col-7 d-flex flex-column justify-content-between product-details">
+                    <div class="up d-flex flex-column align-items-end">
+                        <img id="close-pop-up" src="../imgs/pop-up-close.svg" alt="">
+                        <div class="product-name d-flex flex-column align-items-end">
+                            <h4>oyster mushroom</h5>
+                            <h1 class="product-real"></h1>
+                        </div>
+                        <h3 class="price"></h3>
+                    </div>
+                    <div class="down d-flex flex-column align-items-end">
+                        <p class="text-right prod-desc"></p>
+                        <a href="https://web.facebook.com/EandBFarm"><button id="buy-now" class="btn rounded-pill buy-now"><i class="fab fa-facebook-f"></i>&#9;BUY NOW</button></a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section> 
+
+    <!--HERO-->
+    <div id="hero page-top" class="container-fluid">
+        <div class="row carousel position-relative align-items-center justify-content-center">
+            <div class="title position-absolute text-center ">
+                <h1>Organic, Local, Healthy</h1>
+                <p>E and B Farm offers you variety of healthy alternative foods and snacks that will surely satisfy your cravings while keeping you healthy and eating guilt free</p>
+                <a href="#products"><button  class="btn rounded-pill">VIEW PRODUCTS</button></a>
+            </div>
+            <div id="main-carousel" class="carousel slide position-absolute" data-bs-ride="carousel">
+                <ol class="carousel-indicators">
+                    <li data-bs-target="#main-carousel" data-bs-slide-to="0" class="active"></li>
+                    <li data-bs-target="#main-carousel" data-bs-slide-to="1"></li>
+                    <li data-bs-target="#main-carousel" data-bs-slide-to="2"></li>
+                    <li data-bs-target="#main-carousel" data-bs-slide-to="3"></li>
+                    <li data-bs-target="#main-carousel" data-bs-slide-to="4"></li>                    <li data-bs-target="#main-carousel" data-bs-slide-to="5"></li>
+                </ol>
+                <div class="carousel-inner">
+                    <div class="carousel-item active" >
+                        
+                        <img src="imgs/main-carousel/1.jpg" alt="">
+                    </div>
+                    <div class="carousel-item ">
+                        <img src="imgs/main-carousel/2.jpg" alt="">
+                    </div>
+                    <div class="carousel-item " >
+                        <img src="imgs/main-carousel/3.jpg" alt="">
+                    </div>
+                    <div class="carousel-item " >
+                        <img src="imgs/main-carousel/4.jpg" alt="">
+                    </div>
+                    <div class="carousel-item " >
+                        <img src="imgs/main-carousel/5.jpg" alt="">
+                    </div>
+                    <div class="carousel-item " >
+                        <img src="imgs/main-carousel/6.jpg" alt="">
+                    </div>
+                </div>
+            </div>
+        </div>  
+    </div>
+
+    <!--NEW-PRODUCT-->
+    <div class="container">
+        <div class="row new-products justify-content-end align-items-center">
+            <img class="position-absolute new-prod-img" src="imgs/new-prod-temp.png" alt="">
+            <div class="col-7 new-prod-content text-right">
+                <h1>New</h1>
+                <h4>Oyster Mushroom Kimchi</h4>
+                <p>Your traditional Korean dish now with a twist, Oyster Mushroom Kimchi our newest innovation is fermented oyster mushrooms blended which gives that new texture and delicious taste perfect for mukbangs or be eaten alone.</p>
+                <a href="#kimchi"><button  class="btn rounded-pill">SEE BELOW</button></a>
+            </div>
+        </div>        
+    </div>
+
+    <!--PRODUCTS-->
+    <div class="container products">
+       <div id="products" class="row justify-content-center">
+            <div class="col text-center products-title">
+                <h2>products</h2>
+            </div>
+       </div>
+       <div class="row products-row text-center">
+           <div id="chicharon" class="col-4 position-relative product-item ">
+                <img class="product-img" src="imgs/products/chicharon/chicharon.png" alt="">
+                <h3>CHICHARON</h3>
+           </div>
+           <div id="sticks" class="col-4 position-relative product-item">
+                <img class="product-img" src="imgs/products/sticks/product-pics.png" alt="">
+                <h3>STICKS</h3>
+            </div>
+            <div id="strings" class="col-4 position-relative product-item">
+                <img class="product-img" src="imgs/products/banana-strings/product-pics.png" alt="">
+                <h3>STRINGS</h3>
+            </div>
+       </div>
+       <div class="row products-row text-center">
+            <div id="sisig" class="col-4 position-relative product-item">
+                <img class="product-img" src="imgs/products/sisig/product-pics.png" alt="">
+                <h3>SISIG</h3>
+            </div>
+            <div id="atsara" class="col-4 position-relative product-item">
+                <img class="product-img" src="imgs/products/atsara/product-pics.png" alt="">
+                <h3>ATSARA</h3>
+            </div>
+            <div id="alamang" class="col-4 position-relative product-item">
+                <img class="product-img" src="imgs/products-original/alamang/alamang.png" alt="">
+                <h3>ALAMANG</h3>
+            </div>
+        </div>
+        <div class="row products-row text-center">
+            <div id="kimchi" class="col-4 position-relative product-item">
+                <img class="product-img" src="imgs/products/kimchi/product-pics.png" alt="">
+                <h3>KIMCHI</h3>
+            </div>
+            <div class="col-4 position-relative product-item">
+            </div>
+            <div id="vinegar" class="col-4 position-relative product-item">
+                <img class="product-img" src="imgs/products/nipa-vinegar/nipa-vinegar.png" alt="">
+                <h3>NIPA VINEGAR</h3>
+            </div>
+        </div>
+   </div>
+
+    <!--NEWSLETTER-->
+   <div class="container forms">
+        <div class="row">
+            <div class="col-5 newsletter">
+                <p>Be updated about us</p>
+                <h4>join our newsletter</h4>
+                <form id="newsletter-form" action="" class="text-center">
+                    <div class="mb-3">
+                        <input type="email" class="form-control rounded-pill" id="newsletter-email" placeholder="EMAIL ADRESS" > 
+                        <p class="error"></p>
+                        <button id="subscribe" type="submit" class="btn btn-primary rounded-pill">SUBSCRIBE</button>
+                    </div>
+                </form>
+            </div>
+            <div class="col-7 contact-us">
+
+            </div>
+        </div>
+   </div>
+
+    <!--ABOUT-US-->
+   <div id="about-us" class="container">
+        <div class="row about-us m-auto justify-content-start align-items-center">
+            <img class="position-absolute about-img" src="imgs/chicharon-sc.png" alt="">
+            <div class="col-7 about-us-content text-left">
+                <h1>About Us</h1>
+                <p>E and B Farm is an rural family-owned farm located at the small town of San Tedoro, Oriental Mindoro. Our business is aimed to produce world-class oyster mushrooms products and develop and innovate new ways of producing healthy and delicous snack with various organic crops that are grown in-house.</p>
+                <!--<div class="about-us-circle rounded-circle "></div>-->
+            </div>
+        </div>        
+    </div> 
+
+    <!--FOOTER-->
+   <div id="footer" class="container-fluid footer position-absolute">
+       <div class="row d-flex flex-column">
+           <div class="col socials d-flex justify-content-center">
+               <img src="imgs/facebook-brands.svg" alt="">
+               <img src="imgs/envelope-solid.svg" alt="">
+               <img src="imgs/comment-alt-solid.svg" alt="">
+           </div>
+           <div class="col footer-text d-flex flex-column align-items-center">
+            <i class="fas fa-map-marker-alt"></i><p>National Rd, Barangay Ilag 5202 San Teodoro, Oriental Mindoro, Philippines</p><br>
+            <p>&copy; 2021 E and B Farm</p>
+           </div>
+       </div>
+   </div>
+    
+    
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta1/dist/js/bootstrap.bundle.min.js" integrity="sha384-ygbV9kiqUc6oa4msXn9868pTtWMgiQaeYH7/t7LECLbyPA2x65Kgf80OJFdroafW" crossorigin="anonymous"></script>
+    <script src="main.js">
+    </script>
+    
+
+</body>
+</html>
